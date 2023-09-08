@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="layot.master.cs" Inherits="lab8.layot" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>t<asp:ContentPlaceHolder
+        ID="CphTitle"
+        runat="server">
+
+            </asp:ContentPlaceHolder>
+
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+        <style>
+        
+        .header-with-background {
+        height: 180px; 
+        background-image: url("/images/algon.png"); 
+        background-size: cover; 
+        background-position: center center; 
+      
+        }
+        .fs-4-bold {
+            font-size: 1.8rem; 
+            font-weight: bold;
+        }
+        #btnAdd {
+            font-size: 2rem;
+        }
+
+    </style>
+</head>
+<body style="background-color: #045C3E;">
+     <header class="header-with-background">
+ 
+</header>
+    
+    <form id="form1" runat="server" class="fs-4-bold">
+
+        
+        <asp:ContentPlaceHolder ID="cphContent" runat="server"></asp:ContentPlaceHolder>
+    </form>
+    <asp:ContentPlaceHolder ID="cphLast" runat="server"></asp:ContentPlaceHolder>
+
+
+</body>
+</html>
